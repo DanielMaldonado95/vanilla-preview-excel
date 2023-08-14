@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Preview excel</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h3 class="mt-3">Previsualización de un documento excel</h3>
+        <p>Esta aplicación ocurre solo dentro del navegador</p>
+        <div class="row mb-3">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <label class="form-label">Adjuntar documento</label>
+                <input type="file" lass="form-control" id="fileInput">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div id="datagrid"></div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/canvas-datagrid/dist/canvas-datagrid.js"></script>
+    <script src="node_modules/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
