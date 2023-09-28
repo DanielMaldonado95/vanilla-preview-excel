@@ -16,7 +16,6 @@ document.getElementById('fileInput').addEventListener('change', function (event)
 });
 
 function renderGrid(json) {
-    json.splice(0, 2)
     const grid = new canvasDatagrid({
         data: json,
         parentNode: document.getElementById('datagrid'),
